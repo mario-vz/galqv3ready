@@ -96,10 +96,10 @@ export const PropertiesList = () => {
     <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
       <div className="flex items-center justify-between mb-6">
         <h3 className="text-lg font-semibold text-gray-900">{t.myProperties}</h3>
-        <button className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm">
+        {/* <button className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm">
           <Plus size={18} />
           {t.addProperty}
-        </button>
+        </button> */}
       </div>
 
       {properties.length === 0 ? (
