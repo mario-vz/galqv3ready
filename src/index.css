@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.calendar-container .rbc-calendar {
+  font-family: inherit;
+}
+
+.calendar-container .rbc-header {
+  padding: 12px 8px;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.calendar-container .rbc-today {
+  background-color: #eff6ff;
+}
+
+.calendar-container .rbc-off-range-bg {
+  background-color: #fafafa;
+}
+
+.calendar-container .rbc-event {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s;
+}
+
+.calendar-container .rbc-event:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.calendar-container .rbc-toolbar {
+  padding: 16px 0;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.calendar-container .rbc-toolbar button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #374151;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.calendar-container .rbc-toolbar button:hover {
+  background: #f3f4f6;
+  border-color: #2563eb;
+}
+
+.calendar-container .rbc-toolbar button.rbc-active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.calendar-container .rbc-month-view {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.calendar-container .rbc-date-cell {
+  padding: 8px;
+  text-align: right;
+}
+
+.calendar-container .rbc-date-cell > a {
+  color: #374151;
+  font-weight: 500;
+}
