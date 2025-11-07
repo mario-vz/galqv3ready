@@ -208,6 +208,7 @@ export const translations: Translations = {
   },
   privateArea: {
     title: { es: 'Área de Propietarios', gl: 'Área de Propietarios' },
+    comingSoon: { es: 'Disponible', gl: 'Dispoñible' },
     description: {
       es: 'Los propietarios podrán acceder a un panel privado con información de sus propiedades, ingresos, valoraciones y enlaces a sus anuncios en plataformas.',
       gl: 'Os propietarios poderán acceder a un panel privado con información das súas propiedades, ingresos, valoracións e ligazóns aos seus anuncios en plataformas.',
