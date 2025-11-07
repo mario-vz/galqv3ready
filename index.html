@@ -10,6 +10,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+  const password = ".0nly.Admin."; // 🔒 Cambia esta contraseña si quieres
+  const entered = sessionStorage.getItem("authenticated");
+
+  if (!entered) {
+    const userPass = prompt("Introduce la contraseña para acceder a la web:");
+    if (userPass !== password) {
+      document.body.innerHTML = "<h1 style='text-align:center;margin-top:50px;'>Acceso denegado</h1>";
+      throw new Error("Contraseña incorrecta");
+    } else {
+      sessionStorage.setItem("authenticated", "true");
+    }
+  }
+</script>
+
   </head>
   <body>
     <div id="root"></div>
